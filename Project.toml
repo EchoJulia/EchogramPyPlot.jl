@@ -1,0 +1,19 @@
+name = "EchogramPyPlot"
+uuid = "cefffc6e-22df-5efe-a096-e879be851ea5"
+authors = ["Rob Blackwell <rob@robblackwell.com>"]
+repo = "https://github.com/EchoJulia/EchogramPyPlot.jl.git"
+
+[deps]
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+
+[compat]
+PyPlot = "v2.6.3"
+julia = "1.0"
+
+[extras]
+SimradEK60 = "8e323af8-d215-5c39-b262-30cfc2fa9c48"
+SimradEK60TestData = "6560e86b-c63b-5eb7-baae-f1872a4305ea"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "SimradEK60", "SimradEK60TestData"]

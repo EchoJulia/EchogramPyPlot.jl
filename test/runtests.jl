@@ -22,9 +22,7 @@ x = egshow(Sv38) # full echogram, preserving resolution
 
 x = eghist(Sv38) # histogram
 
-# This segfaults at the moment
-#x = eg(Sv38,cmap=EK500, vmin=-95,vmax=-50) # More like Echoview?
+x = eg(Sv38,cmap=EK500, vmin=-95,vmax=-50) # More like Echoview?
 
 
-x = eg(Sv38, vmin=-95, vmax=-50) # More like Echoview?
 

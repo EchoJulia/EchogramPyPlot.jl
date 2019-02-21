@@ -122,7 +122,7 @@ function echogram(m; vmin = nothing, vmax = nothing, cmap=nothing, range=nothing
     ax[:set_yticks](yticks)
     ax[:set_yticklabels](yticklabels)
 
-    pcolormesh(m, vmin = vmin, vmax = vmax, cmap=ColorMap(cmap))
+    pcolormesh(m, vmin = vmin, vmax = vmax, cmap=ColorMap(cmap), rasterized=true)
 end
 
 function eg(A; vmin = nothing, vmax = nothing, cmap=nothing, range=nothing)

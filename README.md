@@ -8,6 +8,10 @@
 
 Hydroacoustic echograms using PyPlot.
 
+## Example
+
+![38kHz echogram of a krill swarm](https://raw.githubusercontent.com/EchoJulia/EchogramPyPlot.jl/master/examples/example1.png)
+
 ## Quick start
 
 	using EchogramPyPlot

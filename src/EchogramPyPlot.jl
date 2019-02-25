@@ -6,9 +6,6 @@ using EchogramColorSchemes
 
 export echogram, eg
 
-# echogram is for publication plots and composability, eg, egshow and
-# eghist are for interactive use.
-
 """
     echogram(m; vmin = nothing, vmax = nothing, cmap=nothing, range=nothing)
 
@@ -47,7 +44,7 @@ function echogram(m; vmin = nothing, vmax = nothing, cmap=nothing, range=nothing
     ax[:set_yticklabels](yticklabels)
 
     if cmap == nothing
-        cmap = addwhite(EK80) # Current default
+        cmap = addwhite(EK80) # Default
     end
 
     if isa(cmap, ColorScheme)

@@ -39,9 +39,9 @@ function echogram(m; vmin = nothing, vmax = nothing, cmap=nothing, range=nothing
     yticks = floor.(Int, yticks)
     yticklabels = floor.(Int, yticklabels)
     ax = gca()
-    ax[:invert_yaxis]()
-    ax[:set_yticks](yticks)
-    ax[:set_yticklabels](yticklabels)
+    ax.invert_yaxis()
+    ax.set_yticks(yticks)
+    ax.set_yticklabels(yticklabels)
 
     if cmap == nothing
         cmap = addwhite(EK80) # Default
